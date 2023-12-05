@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/result.css" />
+  </head>
+  <body>
+    <div class="desktop-4">
+      <div class="search-job">Search Results</div>
+    <div class="listprint">
+    {% if data_list %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>All India Merit</th>
+                    <th>Percentile Score</th>
+                    <th>Institute Name</th>
+                    <th>Course Name</th>
+                    <th>Exam (JEE/MHT-CET)</th>
+                    <th>Type</th>
+                    <th>Seat Type</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in data_list %}
+                    <tr>
+                        <td>{{ data['Sr. No'] }}</td>
+                        <td>{{ data['All India Merit'] }}</td>
+                        <td>{{ data['Percentile Score'] }}</td>
+                        <td>{{ data['Institute Name'] }}</td>
+                        <td>{{ data['Course Name'] }}</td>
+                        <td>{{ data['Exam(JEE/MHT-CET)'] }}</td>
+                        <td>{{ data['Type'] }}</td>
+                        <td>{{ data['Seat Type'] }}</td>
+                        <td>{{ data['Location'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No matching data found.</p>
+    {% endif %}
+    </div>
+
+    <a href="/">Back to Search</a>
+    <div class="rectangle-parent1">
+        <div class="group-child7"></div>
+        <div class="group-child8"></div>
+        <div class="about-us-wrapper">
+          <div class="about-us">About us</div>
+        </div>
+        <div class="contact-us-wrapper">
+          <div class="contact-us">Contact Us</div>
+        </div>
+        <div class="engineeringaspirations-simpli">
+          "EngineeringAspirations" simplifies college selection for MHTCET exam
+          takers. It offers secure, fast, and reliable eligibility estimates,
+          with a database covering cutoffs, fees, and extracurriculars
+        </div>
+        <div class="engineeringaspirantsgmailcom">
+          engineeringAspirants@gmail.com
+        </div>
+        <img class="image-2-icon1" alt="" src="static/images/WhatsApp_Image_2023-10-24_at_8.39.02_PM-removebg-preview.png" />
+      </div>
+      <div class="home-parent">
+        <div class="home">Home</div>
+        <div class="how-it-works">How It Works</div>
+        <img class="image-2-icon2" alt="" src="static/images/WhatsApp_Image_2023-10-24_at_8.39.02_PM-removebg-preview.png" />
+      </div>
+    </div>
+  </body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+To create a virtual environment in Python, you can use the venv module.
+python -m venv venv
+After creating the virtual environment, you need to activate it
+
+venv\Scripts\activate
+
+*Installing Packages:*
+pip install Flask
+pip install pandas
+
+run app- python app.py or python list.py

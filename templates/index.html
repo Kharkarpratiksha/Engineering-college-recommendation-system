@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/main.css" />
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="your-aspirations-our-expertis-parent">
+        <div class="your-aspirations-our-container">
+          <span>Your aspirations, our </span>
+          <span class="expertise">expertise.</span>
+        </div>
+        <div class="find-your-ideal-container">
+          <p class="find-your-ideal">
+            Find your ideal engineering college in Maharashtra effortlessly.
+          </p>
+          <p class="find-your-ideal">Simplifying your journey.</p>
+        </div>
+        <div class="group-wrapper">
+          <div class="group-container">
+            <div class="group-container">
+              <div class="group-container">
+                <div class="group-container">
+                  <div class="group-child"></div>
+                  <div class="learn-more">lEARN MORE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="homepage-item" alt="" src="static/images/student-849826_1280.jpg" />
+
+      <div class="rectangle-group">
+        <img class="group-item" alt="" src="static/images/notebook-2178656_1280.jpg" />
+        
+        <form method="post" action="{{ url_for('result') }}">
+        <div class="rectangle-container">
+          <div class="group-inner"></div>
+          <div class="group-parent">
+            
+            <form method="post" action="{{ url_for('result') }}">
+              <!-- Your form fields go here -->
+              <button type="submit">Submit</button>
+          </form>
+          </div>
+
+          <label for="Your Name">Your Name</label>
+          <label for="Percentile Score">Percentile Score:</label>
+          <label for="Course Name">Course Name</label>
+          <label for="Budget">Fess Budget:</label>
+          <label for="City">Location</label>
+          <label for=" Category"> Seat Type</label>
+          <div class="rectangle-div"><input type="string" name="Location" id="Location" placeholder="Location" required></div>
+          <div class="group-child1"><input type="text" name="Course Name" id="Course Name"placeholder="Course Name" required></div>
+          <div class="group-child2"><input type="text" name="Budget" id="Budget"placeholder="Budget" required></div>
+          <div class="student-information">student information</div>
+          <div class="group-child3" ><input type="text" name="Your Name" id="Your Name"placeholder="Your Name" required></div>
+          <div class="group-child4"><input type="float" name="Percentile Score" id="Percentile Score"placeholder="Percentile Score" required></div>
+          <div class="group-child5"><select name="Seat Type" id="Seat Type"><br><br>
+            <option value="open">open</option> 
+            <option value="obc">obc</option> 
+            <option value="sc/st">sc/st</option> 
+        </select></div>
+        </div>
+      </div>
+    </form>
+      <div class="rectangle-parent1">
+        <div class="group-child6"></div>
+        <div class="group-child7"></div>
+        <div class="about-us-wrapper">
+          <div class="about-us">About us</div>
+        </div>
+        <div class="contact-us-parent">
+          <div class="contact-us">Contact Us</div>
+          <div class="support">Support</div>
+        </div>
+        <div class="engineeringaspirations-simpli">
+          "EngineeringAspirations" simplifies college selection for MHTCET exam
+          takers. It offers secure, fast, and reliable eligibility estimates,
+          with a database covering cutoffs, fees, and extracurriculars
+        </div>
+        <div class="engineeringaspirantsgmailcom">
+          engineeringAspirants@gmail.com
+        </div>
+        <img class="image-2-icon" alt="" src="static/images/WhatsApp_Image_2023-10-24_at_8.39.02_PM-removebg-preview.png" />
+      </div>
+      <div class="group-parent1">
+        <div class="rectangle-parent2">
+          <div class="group-child8"></div>
+          <div class="login-wrapper">
+            <button onclick="redirectToLoginPage()" class="login">login</button>  
+          <script>
+            function redirectToLoginPage() {
+              window.location.href = "/login";
+            }
+          </script>
+          </div>
+        </div>
+        <div class="home">Home</div>
+        <div class="how-it-works">What we offers?</div>
+
+        <img class="image-2-icon1" alt="" src="static/images/WhatsApp_Image_2023-10-24_at_8.39.02_PM-removebg-preview.png" />
+      </div>
+      <div class="what-we-offers">What we offers?</div>
+      <div class="homepage-inner"></div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="fixed-width-sec-">
+            <img
+              class="icon-cool-icon-n2"
+              alt=""
+              src="static/images/college-48.png"
+            />
+          </div>
+          <b class="h3-feature-title-sec-">Personalized College Match</b>
+          <div class="fixed-width-fixed-height-sec-"></div>
+          <div class="input-your-cet">
+            Input your CET percentile, budget, desired city, and preferred
+            engineering branch, and let our powerful algorithms do the rest.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-41">
+        <div class="card1">
+          <div class="fixed-width-sec-1">
+            <img
+              class="icon-cool-icon-n2"
+              alt=""
+              src="static/images/database-48.png"
+            />
+          </div>
+          <b class="comprehensive-college-database"
+            >Comprehensive College Database</b
+          >
+          <div class="fixed-width-fixed-height-sec-"></div>
+          <div class="access-an-extensive">
+            Access an extensive database of engineering institutions, including
+            information on admission requirements, fees, available programs, and
+            campus locations.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-42">
+        <div class="card1">
+          <div class="fixed-width-sec-2">
+            <img
+              class="icon-cool-icon-n2"
+              alt=""
+              src="static/images/money-48.png"
+            />
+          </div>
+          <b class="h3-feature-title-sec-1">Financial Fit</b>
+          <div class="fixed-width-fixed-height-sec-"></div>
+          <div class="determine-which-colleges">
+            Determine which colleges are financially feasible for you by setting
+            your budget. We help you find options that align with your financial
+            capabilities, reducing the stress of tuition expenses.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-43">
+        <div class="card3">
+          <div class="fixed-width-sec-">
+            <img
+              class="icon-cool-icon-n2"
+              alt=""
+              src="static/images/city-48.png"
+            />
+          </div>
+          <b class="h3-feature-title-sec-">City of Choice</b>
+          <div class="fixed-width-fixed-height-sec-"></div>
+          <div class="specify-your-preferred">
+            Specify your preferred city or cities for studying. Our platform
+            narrows down your options to colleges located in your desired
+            locations.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img
+          class="thumb-concept-icon"
+          alt=""
+          src="static/images/students_09.jpg"
+        />
+      </div>
+    </div>
+  </body>
+</html>
